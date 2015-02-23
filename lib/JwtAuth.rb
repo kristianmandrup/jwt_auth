@@ -50,7 +50,11 @@ module JwtAuth
     end
 
     def generate_valid_tokens(user)
-      JWT.encode({@user.id.to_s => @user.email.to_s}, "secret")
+      JWT.encode(user_data, "secret")
+    end
+
+    def user_data
+      { @user.id.to_s => @user.email.to_s }
     end
   end
 end
