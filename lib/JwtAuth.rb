@@ -1,5 +1,4 @@
 require "JwtAuth/version"
-require 'jwt'
 module JwtAuth 
   class TokenValidator
     def initialize(token)
