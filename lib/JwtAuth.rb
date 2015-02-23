@@ -1,5 +1,6 @@
 require "JwtAuth/version"
 module JwtAuth 
+  require 'jwt'
   class TokenValidator
     def initialize(token)
       @token = token
@@ -31,6 +32,7 @@ module JwtAuth
   end
 
   class UserAuthValidator
+    require 'jwt'
     def initialize(auth_params)
       @auth_params = auth_params
     end
