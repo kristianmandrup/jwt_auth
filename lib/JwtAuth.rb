@@ -32,7 +32,7 @@ module JwtAuth
 
   class UserAuthValidator
     def initialize(auth_params)
-      auth_params = auth_params
+      @auth_params = auth_params
     end
 
     def get_token
@@ -44,7 +44,7 @@ module JwtAuth
     end
 
     def user
-      @user = User.find_or_create_by(auth_params)
+      @user = User.find_or_create_by(@auth_params)
     end
 
     def generate_valid_tokens(user)
