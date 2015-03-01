@@ -11,7 +11,7 @@ module JwtAuth
     end
 
     def get_token_params
-      { "token" => generate_valid_tokens(user), "username" => user.email }
+      { "token" => generate_valid_tokens, "username" => user.email }
     end
 
     def user
