@@ -1,13 +1,13 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'JwtAuth/version'
+require 'jwt_auth/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "JwtAuth"
+  spec.name          = "jwt_auth"
   spec.version       = JwtAuth::VERSION
-  spec.authors       = ["Kavita"]
-  spec.email         = ["kavitaror1@gmail.com"]
+  spec.authors       = ["Jerk"]
+  spec.email         = ["jerk@gmail.com"]
   spec.summary       = %q{jwt authentice}
   spec.description   = %q{jwt authentice the token}
   spec.homepage      = ""
